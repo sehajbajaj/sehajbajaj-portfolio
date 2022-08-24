@@ -51,7 +51,7 @@ const Blog = ({ posts }) => {
     }
   }, [router]);
 
-  const title = "Blog";
+  const title = "Projects";
   const description = seo.description;
   const url = `${seo.canonical}blog`;
 
@@ -84,26 +84,6 @@ const Blog = ({ posts }) => {
             placeholder="Search..."
             maxWidth="400px"
           />
-        </Flex>
-
-        <Flex
-          justify="center"
-          align="center"
-          direction="row"
-          wrap="wrap"
-          m="1.5rem 0"
-        >
-          {Object.keys(tagColor).map((tag, index) => {
-            const color = tagColor[tag];
-
-            return (
-              <Box key={index}>
-                <TagComponent color={color} onClick={() => filteredPosts(tag)}>
-                  {tag}
-                </TagComponent>
-              </Box>
-            );
-          })}
         </Flex>
 
         {blogPost.length > 0 ? (

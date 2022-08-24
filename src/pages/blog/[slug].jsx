@@ -66,8 +66,8 @@ const BlogPost = ({ mdxSource, frontMatter }) => {
 
             <Flex direction="column">
               <Text fontSize="16px" color={color} py="1">
-                {frontMatter.author} /{" "}
-                {dayjs(frontMatter.publishedAt).format("MMMM DD, YYYY")} /{" "}
+                {frontMatter.author} • {" "}
+                {dayjs(frontMatter.publishedAt).format("MMMM DD, YYYY")} •{" "}
                 {frontMatter.readingTime.text}
               </Text>
               <Text py="1">
@@ -95,19 +95,6 @@ const BlogPost = ({ mdxSource, frontMatter }) => {
 
           <Box as="article">
             {content}
-
-            <Text fontWeight="500" py="6">
-              <ChakraLink
-                href={`https://github.com/imadatyatalah/nextjs-chakra-ui-portfolio-template/blob/main/src/data/blog/${frontMatter.slug}.mdx`}
-                d="flex"
-                alignItems="flex-end"
-                _focus={{ outline: "none" }}
-                isExternal
-              >
-                <Icon as={MdEdit} w={6} h={6} marginRight="2" />
-                Edit this page on github.
-              </ChakraLink>
-            </Text>
           </Box>
         </Box>
       </MDXProvider>

@@ -1,17 +1,19 @@
 import { Box, Button, Icon, Link as ChakraLink, Text } from "@chakra-ui/react";
-import { FaGithub, FaLinkedin, FaInstagram, FaCode } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaMailBulk, FaCode, FaBookReader, FaPaperclip } from "react-icons/fa";
 
 import { MAX_WIDTH } from "config";
 
 // Fell free to add your social media accounts!
 const socialAccounts = [
-  { icon: FaGithub, path: "https://github.com/", title: "Github" },
-  { icon: FaLinkedin, path: "https://www.linkedin.com/", title: "Linkedin" },
-  { icon: FaInstagram, path: "https://www.instagram.com/", title: "Instagram" },
+  { icon: FaGithub, path: "https://github.com/sehajbajaj", title: "Github" },
+  { icon: FaLinkedin, path: "https://www.linkedin.com/in/sehajbajaj/", title: "Linkedin" },
+  { icon: FaBookReader, path: "https://sehajbajaj.hashnode.dev/", title: "Blogs" },
+  { icon: FaPaperclip, path: "/MainResume.pdf", title: "Resume" },
 ];
 
 const Footer = () => {
   return (
+    <>
     <Box as="footer">
       <Box
         display="flex"
@@ -41,53 +43,30 @@ const Footer = () => {
           ))}
         </Box>
         <Box py="2">
-          <Text>
-            Built with{" "}
-            <span role="img" aria-label="red heart">
-              ❤️
-            </span>
-            ,{" "}
-            <ChakraLink
-              href="https://nextjs.org/"
-              fontWeight="600"
-              _focus={{ outline: "none" }}
-              isExternal
-            >
-              Next.js
-            </ChakraLink>
-            ,{" "}
-            <ChakraLink
-              href="https://chakra-ui.com/"
-              fontWeight="600"
-              _focus={{ outline: "none" }}
-              isExternal
-            >
-              Chakra UI
-            </ChakraLink>
-            , Hosted in{" "}
-            <ChakraLink
-              href="http://vercel.com/"
-              fontWeight="600"
-              _focus={{ outline: "none" }}
-              isExternal
-            >
-              Vercel.
-            </ChakraLink>
-          </Text>
-        </Box>
-        <Box py="2">
-          <ChakraLink
+        <Text>
+        © 2022 by Sehajpreet Kaur. All rights reserved.
+          <br/>
+          Template by <ChakraLink
             href="https://github.com/imadatyatalah/nextjs-chakra-ui-portfolio-template"
+            aria-label="source code"
+            isExternal
+          >Imad Atyat-Allah</ChakraLink>
+            </Text>
+        </Box>
+        {/* <Box py="2">
+          <ChakraLink
+            href="/MainResume.pdf"
             aria-label="source code"
             isExternal
           >
             <Button aria-label="source code">
-              <Icon as={FaCode} w="6" h="6" />
+              <Icon as={FaPaperclip} w="6" h="6" />
             </Button>
           </ChakraLink>
-        </Box>
+        </Box> */}
       </Box>
     </Box>
+    </>
   );
 };
 
