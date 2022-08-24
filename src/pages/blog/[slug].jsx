@@ -7,10 +7,8 @@ import {
   Text,
   Link as ChakraLink,
   useColorModeValue,
-  Icon,
 } from "@chakra-ui/react";
 import { MDXProvider } from "@mdx-js/react";
-import { MdEdit } from "react-icons/md";
 import dayjs from "dayjs";
 import hydrate from "next-mdx-remote/hydrate";
 
