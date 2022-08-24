@@ -1,5 +1,5 @@
 export const seo = {
-  title: "Sehajpreet Kaur - Portfolio",
+  title: "Sehajpreet Kaur",
   description: "Personal Portfolio",
   canonical: "https://sehajbajaj-portfolio.vercel.app/",
 };

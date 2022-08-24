@@ -29,10 +29,10 @@ const Home = () => {
           description,
           images: [
             {
-              url: `${seo.canonical}bighead.svg`,
+              url: `${seo.canonical}avataaars.png`,
               width: "350px",
               height: "350px",
-              alt: "avatar bigheads",
+              alt: "avatar",
             },
           ],
         }}
@@ -50,7 +50,7 @@ const Home = () => {
           src="/avataaars.png"
           width="200"
           height="200"
-          alt="avatar bigheads"
+          alt="avatar"
           placeholder="blur"
           blurDataURL="L5I~of#i004mgjw]-4XA00?wL#xu"
           priority
