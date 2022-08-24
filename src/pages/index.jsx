@@ -71,7 +71,7 @@ const Home = () => {
             and my interests
       include{" "}
             <Text as="span" fontWeight="600">
-             problem solving, learning to code, and exploring different Tech Stack <span role="img">❤️</span>
+             problem solving, learning to code, and exploring different Tech Stacks <span role="img">❤️</span>
             </Text>{" "}
           </Text>
         </Box>
