@@ -7,7 +7,7 @@ import { MAX_WIDTH } from "config";
 const socialAccounts = [
   { icon: FaGithub, path: "https://github.com/sehajbajaj", title: "Github" },
   { icon: FaLinkedin, path: "https://www.linkedin.com/in/sehajbajaj/", title: "Linkedin" },
-  { icon: FaBookReader, path: "https://sehajbajaj.hashnode.dev/", title: "Blogs" },
+  // { icon: FaBookReader, path: "https://sehajbajaj.hashnode.dev/", title: "Blogs" },
   { icon: FaPaperclip, path: "/MainResume.pdf", title: "Resume" },
 ];
 
@@ -53,17 +53,6 @@ const Footer = () => {
           >Imad Atyat-Allah</ChakraLink>
             </Text>
         </Box>
-        {/* <Box py="2">
-          <ChakraLink
-            href="/MainResume.pdf"
-            aria-label="source code"
-            isExternal
-          >
-            <Button aria-label="source code">
-              <Icon as={FaPaperclip} w="6" h="6" />
-            </Button>
-          </ChakraLink>
-        </Box> */}
       </Box>
     </Box>
     </>
