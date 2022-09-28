@@ -63,15 +63,11 @@ const Home = () => {
             </span>
           </Heading>
           <Text py="4">
-            A{" "}
-            <Text as="span" fontWeight="600">
-            third-year engineering student at Indraprastha University (New
-      Delhi), pursuing a bachelor’s degree in Computer Science
-            </Text>{" "}
-            and my interests
-      include{" "}
-            <Text as="span" fontWeight="600">
-             problem solving, learning to code, and exploring different Tech Stacks <span role="img">❤️</span>
+            <Text as="span" fontWeight="400">
+            A third-year engineering student pursuing a bachelor's degree in Computer Science from Guru Tegh Bahadur Institute of Technology (GGSIPU).
+            </Text>
+            <Text as="span" fontWeight="400">
+            {" "}Presently, my tech stack revolves around Full-Stack web development, making it my preferred area of specialization.<span role="img">❤️</span>
             </Text>{" "}
           </Text>
         </Box>

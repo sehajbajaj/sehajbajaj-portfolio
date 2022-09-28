@@ -12,4 +12,6 @@ export const tagColor = {
   design: { bgColor: "#f11df1E2", hover: "#d313d3E2" },
   chakraui: { bgColor: "#73fc03", hover: "#03fc8c" },
   django: { bgColor: "#d05cfa", hover: "#e092d2" },
+  mongodb: {bgColor: "#FFC07F", hover: "#FFC0B9"},
+  express: {bgColor: "#370031", hover: "#7D82B8"},
 };
